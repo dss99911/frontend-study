@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script>
+
+        function aa() {
+            alert("1");
+            fetch("aa.html", {
+                method: "POST"
+            }).then(function(response){
+                alert(response);
+                throw "a";
+
+            });
+            alert("4");
+        }
+
+    </script>
+</head>
+<body>
+<button onclick="aa()">dsd</button>
+
+</body>
+</html>

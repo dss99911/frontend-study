@@ -1,0 +1,7 @@
+<script>
+    //this send message to parent windows
+    //https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+    window.parent.postMessage(data, '*');
+    window.parent.close();
+    window.location = window.location.href; // do refresh the page
+</script>

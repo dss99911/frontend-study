@@ -1,0 +1,18 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        window.addEventListener("message", receiveMessage, false);
+
+        function receiveMessage(event) {
+            console.log('origint' + event.origin);
+            console.log('event' + event);
+        }
+    </script>
+
+</head>
+<body>
+<iframe src="eventFromIframe.html" width="100%" height="100%"frameBorder="0"></iframe>
+</body>
+
+</html>
