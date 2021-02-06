@@ -2,22 +2,19 @@
 
 <head>
     <script>
-
         function aa() {
-            alert("1");
-            fetch("aa.html", {
-                method: "POST"
-            }).then(function(response){
-                alert(response);
-                throw "a";
 
-            });
-            alert("4");
+            let text = document.getElementById("input").value;
+
+            let number = text.indexOf("?");
+            let result = number == -1 ? text : text.substring(0, number)
+            alert(result.length);
         }
 
     </script>
 </head>
 <body>
+<input id="input"/>
 <button onclick="aa()">dsd</button>
 
 </body>
