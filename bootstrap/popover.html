@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--Basic : https://www.w3schools.com/bootstrap/bootstrap_popover.asp -->
+<a href="#"
+   data-toggle="popover"
+   title="Popover Header"
+   data-content="Some content inside the popover">Toggle
+    popover</a>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+<!--Basic-->
+
+<!--Positioning : https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_popover_pos&stacked=h -->
+<ul class="list-inline">
+    <!--a tag가 아니어도됨-->
+    <li title="Header" data-toggle="popover" data-placement="top" data-content="Content"></li>
+    <li><a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Bottom</a></li>
+    <li><a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Left</a></li>
+    <li><a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Right</a></li>
+</ul>
+<!--Positioning-->
+
+<!--use HTML : https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_popover_html&stacked=h -->
+<a href="#" data-toggle="popover" title="<h1>Popover Header</h1>" data-content="Some content inside the popover">Toggle
+    popover</a>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover({html: true});
+    });
+</script>
+<!--use HTML -->
+
+
+<!--Reference : https://www.w3schools.com/bootstrap/bootstrap_ref_js_popover.asp -->
+
+</body>
+</html>
