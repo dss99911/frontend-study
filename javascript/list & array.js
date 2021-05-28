@@ -18,3 +18,32 @@ fruits.forEach(a => alert(a));
 function myFunction(item, index) {
     document.getElementById("demo").innerHTML += index + ":" + item + "<br>";
 }
+
+/**
+ *
+ * @param arr
+ * @param key lambda
+ * @param value lambda
+ */
+function toMap(arr, key, value) {
+    return arr.reduce(function(map, obj) {
+        map[key(obj)] = value(obj);
+        return map;
+    }, {});
+}
+
+var arr = [
+    { key: 'foo', val: 'bar' },
+    { key: 'hello', val: 'world' }
+];
+
+print(toMap(arr, a => a.key, a => a.val))
+
+var groupBy = function(xs, key) {
+    return xs.reduce(function(rv, x) {
+        (rv[key(x)] = rv[key(x)] || []).push(x);
+        return rv;
+    }, {});
+};
+
+console.log(groupBy(['one', 'two', 'three'], a => a.length));
