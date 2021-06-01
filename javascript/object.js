@@ -25,7 +25,10 @@ alert(JSON.stringify(a) )
 const target = { a: 1, b: 2 };
 const source = { b: 4, c: 5 };
 
-const returnedTarget = Object.assign(target, source);
+const returnedTarget = Object.assign(target, source);//shallow copy
+const returnedTarget = Object.assign({}, source);//shallow copy.for copy arrary, use []
+const returnedTarget2 = {...source}//shallow copy. for copy arrary, use [...source]
+
 
 console.log(target);
 // expected output: Object { a: 1, b: 4, c: 5 }
