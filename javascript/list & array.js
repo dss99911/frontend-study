@@ -47,3 +47,14 @@ var groupBy = function(xs, key) {
 };
 
 console.log(groupBy(['one', 'two', 'three'], a => a.length));
+
+//sum, avg
+const sum = numbers.reduce((a, b) => a + b, 0);
+const avg = (sum / times.length) || 0;
+
+//sort
+numbers.sort(function(a, b) {
+    return a - b;
+});
+numbers.sort();
+console.log(numbers);
