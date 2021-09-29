@@ -4,18 +4,20 @@
     <script>
         function aa() {
 
-            let text = document.getElementById("input").value;
-
-            let number = text.indexOf("?");
-            let result = number == -1 ? text : text.substring(0, number)
-            alert(result.length);
+            var b = {}
+            if (!b["a"]) {
+                b["a"] = 0
+            }
+            alert(b["a"]);
+            document.body
         }
 
     </script>
 </head>
 <body>
 <input id="input"/>
-<button onclick="aa()">dsd</button>
+<button id="btn" onclick="aa()">btn</button>
+<button id="btn2" >btn2</button>
 
 </body>
 </html>

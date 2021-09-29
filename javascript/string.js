@@ -7,3 +7,5 @@ let rawString = `sdafasdf
 asdfasd""\`
 ${text}
 asdf`
+
+text.split(",")
