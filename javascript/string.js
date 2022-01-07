@@ -9,3 +9,6 @@ ${text}
 asdf`
 
 text.split(",")
+
+JSON.stringify({a:1})
+JSON.parse("{'a':1}")
