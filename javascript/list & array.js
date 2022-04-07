@@ -1,11 +1,15 @@
 const numbers = [1, 2, 3, 4, 5];
-const doubled = numbers.map(number => number * 2);
+const doubled = numbers
 const doubled = numbers.flatMap(number => [number, number]);
 const doubled = numbers.filter(number => number);
 const doubled = numbers.filter(number => {return number});
 
 //merge arrays
 const twoNumbers = numbers.concat(numbers)
+
+//sub listing
+numbers.slice(0, 2) // [1, 2]
+numbers.slice(2) // [3, 4, 5]
 
 const nextUsers = [ ...users ]; // users 배열을 복사하고
 const distinctNumber = [...new Set(numbers)]
@@ -58,3 +62,7 @@ numbers.sort(function(a, b) {
 });
 numbers.sort();
 console.log(numbers);
+
+//NodeList to Array
+
+Array.from(document.querySelectorAll("div.b8cIId.ReQCgd.Q9MA7b > a"))
