@@ -10,3 +10,4 @@ Array.from(document.querySelectorAll("div.b8cIId.ReQCgd.Q9MA7b > a"))
 //fetch required data from tags
 Array.from(document.querySelectorAll("div.b8cIId.ReQCgd.Q9MA7b > a"))
     .map(tag => tag.href.split("=")[1] + ", " + tag.children[0].innerText).slice(0, 20);
+
