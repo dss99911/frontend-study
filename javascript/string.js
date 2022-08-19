@@ -13,3 +13,8 @@ text.split(",")
 
 JSON.stringify({a:1})
 JSON.parse("{'a':1}")
+
+//Regex
+let text = "Visit W3Schools";
+let pattern = /w3schools/i;
+let result = text.match(pattern);

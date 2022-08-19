@@ -9,7 +9,11 @@ const twoNumbers = numbers.concat(numbers)
 
 //sub listing
 numbers.slice(0, 2) // [1, 2]
+numbers.slice(2, 3) // [3]
 numbers.slice(2) // [3, 4, 5]
+
+numbers.join() //1,2,3,4,5
+numbers.join("_") //1_2_3_4_5
 
 const nextUsers = [ ...users ]; // users 배열을 복사하고
 const distinctNumber = [...new Set(numbers)]
